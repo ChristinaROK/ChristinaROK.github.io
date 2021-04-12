@@ -30,20 +30,26 @@ key: page-about
 </div>
 
 Hi there, I`m Chrstina Shin.    
-Love to share what I discovered with you.   
-Enjoy being here. :+1:
+I am a developer who discover, design, and develop services that people want and need for their daily life.    
+
+I love to travel, learn something new, and experience new cultures.   
+
+BTW, the most important message for you!   
+Please Enjoy Being Here. :) :+1:
 
 ## Archives
 
 - Python
-    - about python programming
+    - about Python programming
 - Linux
-    - about linux programming
+    - about Linux programming
 - NLP
     - about Natural Language Processing
-- Web
-    - about front-end
-- Git
-    - about how to use git
+- Software
+    - about Development Software (e.g. Git, Docker, Kubernetes)
+- OS
+    - about Operating System 
+- Database
+    - about Database (e.g. RDBM, GraphDB, ElasticSearch)
 
 
