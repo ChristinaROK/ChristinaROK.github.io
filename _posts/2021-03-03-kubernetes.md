@@ -1,9 +1,9 @@
 ---
 layout: article
-title: Kubernetes-kubernetes란?
+title: Software-Kubernetes
 aside:
  toc: true
-tags: kubernetes
+tags: software
 disqus: true
 ---
 
