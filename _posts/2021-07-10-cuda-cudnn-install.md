@@ -19,7 +19,7 @@ nvidia에서 제공하는 gpu 관련 패키지 (ex. cuda, cudnn) 또는 tensorfl
 
 [nvidia 하드웨어별 드라이버 버전 확인 사이트](https://www.nvidia.com/Download/Find.aspx?lang=en-us) 에서 나의 GPU 모델명을 입력하면 다음과 같은 결과가 나온다. NVIDIA Recommended인 **450.119.03**버전을 선택한다. 
 
-<img src="assets/nvidia_driver_version.png">
+<img src="/assets/nvidia_driver_version.png" style="zoom:50%;" />
 
 
 
@@ -86,7 +86,7 @@ tensorflow 버전별로 호환되는 python, gcc, cuDNN, CUDA 버전은 다음�
 
 <img src="/assets/tensorflow_version.png" style="zoom:50%;" />
 
-<img src="/Users/ssj/Documents/ChristinaROK.github.io/assets/pytorch_version.png" style="zoom:50%;" />
+<img src="/assets/pytorch_version.png" style="zoom:50%;" />
 
 CUDA 버전은 torch 1.7.1, tensorflow 2.*를 사용한다는 가정하에 호환이 가능하면서 가장 최신 버전인 **11.0**을 선택했다. cuDNN 버전은 cuda와 호환되는  **8.0.4** 를 선택했다.
 
