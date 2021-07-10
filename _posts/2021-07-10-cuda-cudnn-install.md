@@ -86,9 +86,15 @@ tensorflow 버전별로 호환되는 python, gcc, cuDNN, CUDA 버전은 다음�
 
 <img src="/assets/tensorflow_version.png" style="zoom:50%;" />
 
+
+
+torch는 여러 버전의 cuda, cudnn 을 지원한다. 
+
 <img src="/assets/pytorch_version.png" style="zoom:50%;" />
 
-CUDA 버전은 torch 1.7.1, tensorflow 2.*를 사용한다는 가정하에 호환이 가능하면서 가장 최신 버전인 **11.0**을 선택했다. cuDNN 버전은 cuda와 호환되는  **8.0.4** 를 선택했다.
+
+
+torch 1.7.1, tensorflow 2.*를 사용한다는 가정하에 cuda 버전을 선택할 때, torch와 tensorflow와 호환이 가능한지를 가장 우선적으로 고려했다. 따라서 가장 최신 버전인 **11.0**을 선택했다. cuDNN 버전은 cuda와 호환되는  **8.0.4** 를 선택했다.
 
 
 
