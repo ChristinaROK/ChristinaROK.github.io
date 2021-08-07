@@ -1,3 +1,13 @@
+---
+layout: article
+title: 백엔드 및 프론트엔드 프레임워크 정리
+aside:
+ toc: true
+tags: software
+disqus: true
+
+---
+
 # (Web) Framework
 
 > Application을 개발하고 배포할 때 framework를 사용한다. Framework는 개발과 배포에 필요한 프로그램, 컴퍼일러, 코드 라이브러리, 각종 유틸, 또는 API등을 제공한다. 

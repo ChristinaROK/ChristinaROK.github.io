@@ -37,7 +37,9 @@ I love to travel, learn something new, and experience new cultures.
 BTW, the most important message for you!   
 Please Enjoy Being Here. :) :+1:
 
-Check my (**portfolit**)[https://myway2027.notion.site/Portfolio-6ee9d1c10a8d47e68324c05ff3a447ff]
+* **[Portfolio](https://myway2027.notion.site/Portfolio-6ee9d1c10a8d47e68324c05ff3a447ff)** 👈👈👈
+
+* Contact E-mail: myway2027@gmail.com
 
 ## Archives
 
