@@ -1,13 +1,10 @@
 ---
 layout: article
-title: ubuntu 18.04 nvidia driver, cuda, cudnn 설치
+title: LINUX - nvidia driver, cuda, cudnn 설치 (ubuntu 18.04)
 aside:
  toc: true
 tags: linux
-disqus: true
 ---
-
-# ubuntu 18.04 nvidia, cuda, cudnn, docker-nvidia 설치
 
 ### 1. GPU 하드웨어와 호환되는 nvidia driver version 확인
 
@@ -183,7 +180,7 @@ $ ldconfig -N -v $(sed 's/:/ /' <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudn
 >
 >cuDNN Version: 8.0.4
 
-# Reference 
+## Reference 
 
 * Official Docs
   * [Tensorflow configuration](https://www.tensorflow.org/install/source#tested_build_configurations)

@@ -1,21 +1,18 @@
 ---
 layout: article
-title: Linux-bash shell 명령어 모음
+title: LINUX - ING 배쉬(bash) 명령어 모음
 aside:
  toc: true
 tags: linux
-disqus: true
 ---
 
-이 포스트에서는 bash shell 명령어를 소개한다. 
-
-# Contents 
+## Contents 
 * [String](#string)
 * [Control Flow](#control-flow)
 
 ---
 
-# String 
+## String 
 
 ### string substitution 
 
@@ -37,13 +34,14 @@ echo ${f_name%md}
 echo ${f_name%.*}
 # 2021-04-12-bert
 ```
----
-
-# Control Flow
-...
 
 ---
 
-# Reference
-...
+## Control Flow
+
+
+---
+
+## Reference
+
 

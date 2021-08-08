@@ -1,13 +1,12 @@
 ---
 layout: article
-title: Python-날짜 관련 라이브러리 (datetime, pandas.Timestamp)
+title: PYTHON - 파이썬 날짜 관련 라이브러리 (datetime, pandas.Timestamp)
 aside:
  toc: true
 tags: python
-disqus: true
 ---
 
-# Datetime
+## Datetime
 * `datetime` 모듈은 파이썬 내장 라이브러리 (python built-in library)
 * date, time 정보 추출에 초점을 둔 모듈
 
@@ -124,7 +123,7 @@ date.today() - timedelta(days = 365) # 오늘은 2021-03-11
 ```
 
 
-# pandas.Timestamp 
+## pandas.Timestamp 
 
 * 파이썬의 `datetime.datetime` object와 동일하게 사용되는 판다스 라이브러리의 객체이다. 판다스 자료 구조 중 시계열 데이터의 데이터 타입으로 사용된다. 
 
@@ -162,5 +161,5 @@ df['date'] = pd.to_datetime(df['date'])
 	* pd.Timestamp 자료형을 입력값으로 받아 파이썬 datetime 자료형으로 바꿔준다. 
 
 
-# Reference
+## Reference
 

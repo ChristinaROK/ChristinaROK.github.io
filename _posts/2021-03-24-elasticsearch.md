@@ -1,18 +1,17 @@
 ---
 layout: article
-title: Database-ElasticSearch 용어 정리
+title: DB - ING ElasticSearch 알아보기
 aside:
  toc: true
 tags: database
-disqus: true
 ---
 
-# Elastic Search
+## Elastic Search
 ElasticSearch는 Lucene 라이브러리 기반의 검색 엔진이다.   
 [DB-EnginesRanking](https://db-engines.com/en/ranking/search+engine)에 따르면 ElasticSearch는 현재 업계에서 가장 인기있는 검색 엔진이라고 한다.     
 이 번 포스팅에서는 ElasticSearch의 개념, 용어, 특징을 알아보고 설치 후 실습을 진행해보도록 한다.
 
-# 개념 및 특징
+## 개념 및 특징
 
 * Full-text serach in real time
 	* 다른 DB와 달리 ElasticSearch는 텍스트 전문에서 검색이 빠르다. **inverted index**라는 색인 작업으로 데이터를 저장하기 때문에 텍스트 검색이 빠르다.  
@@ -26,7 +25,7 @@ ElasticSearch는 Lucene 라이브러리 기반의 검색 엔진이다.
 * Data analysis plugin avaialbe
 	* Hadoop, SQL 플러그인을 지원해 데이터 분석을 쉽게 할 수 있다. 
 
-# 구조(Architecture) 및 주요 용어
+## 구조(Architecture) 및 주요 용어
 
 ### Logical Architecture
 
@@ -116,7 +115,7 @@ ElasticSearch는 Lucene 라이브러리 기반의 검색 엔진이다.
 	* ElasticSearch에서 가장 큰 시스템 단위를 의미하며 Cluster는 하나 이상의 노드로 이루어진 노드 집합이다. 여러대의 서버가 하나의 Cluster를 구성할 수도, 한 서버에 여러 Cluster가 존재할 수도 있다. 
 
 
-# 특징
+## 특징
 
 > 데이터를 저장하고 검색하는 작업은 관계형 데이터베이스인 MySQL로도 충분할 것 같은데, 왜 굳이 ElasticSearch같은 검색 엔진을 사용할까?   
 > ElasticSearch의 특징을 살펴보면 그 이유를 알 수 있다. 
@@ -151,11 +150,11 @@ ElasticSearch는 Lucene 라이브러리 기반의 검색 엔진이다.
 
 
 
-# 설치 
+## 설치 
 
-# 실습
+## 실습
 
-# Reference
+## Reference
 [ElasticSearch 공식 문서](https://www.elastic.co/guide/index.html)
 [10-elasticsearch-concepts](https://logz.io/blog/10-elasticsearch-concepts/)
 [database-shard](https://nesoy.github.io/articles/2018-05/Database-Shard)

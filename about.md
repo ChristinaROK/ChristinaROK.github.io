@@ -29,30 +29,14 @@ key: page-about
   ![Me](/assets/me.jpg){:.circle}
 </div>
 
-Hi there, I`m Chrstina Shin.    
-I am a developer who discover, design, and develop services that people want and need for their daily life.    
+Hi, I`m Chrstina Shin (신승진).    
+I am a developer who is devoted to developing services that people want and need for their daily lives.     
+I'm open to anyone who is curious about life and programming! So feel free to contact me :D   
 
-I love to travel, learn something new, and experience new cultures.   
-
-BTW, the most important message for you!   
-Please Enjoy Being Here. :) :+1:
+---
 
 * **[Portfolio](https://myway2027.notion.site/Portfolio-6ee9d1c10a8d47e68324c05ff3a447ff)** 👈👈👈
 
-* Contact E-mail: myway2027@gmail.com
+* E-mail: myway2027@gmail.com
 
-## Archives
-
-- Python
-    - about Python programming
-- Linux
-    - about Linux programming
-- NLP
-    - about Natural Language Processing
-- Software
-    - about Development Software (e.g. Git, Docker, Kubernetes)
-- OS
-    - about Operating System 
-- Database
-    - about Database (e.g. RDBM, GraphDB, ElasticSearch)
-
+* [Github](https://github.com/ChristinaROK)

@@ -1,12 +1,12 @@
 ---
 layout: article
-title: Python-Dask(파이썬 대용량 데이터 분산 처리 패키지)
+title: PYTHON - ING Dask (파이썬 대용량 데이터 분산 처리 패키지) 알아보기
 aside:
  toc: true
 tags: python
 ---
 
-# Problem
+## Problem
 > 이 포스팅은 어떤 문제 상황을 해결할까?
 
 Python은 느리다!   
@@ -15,32 +15,32 @@ Python은 느리다!
 
 Pandas는 데이터를 가공 패키지로 다양한 데이터 처리 함수를 제공해 데이터 가공에 흔히 사용되지만, 10GB가 넘어가는 데이터를 처리하는데는 속도가 느려진다는 단점이 있다. dask는 판다스보다 대용량 데이터를 더 빠르게 처리할 수 있으며, 컴퓨터의 램보다 더 큰 용량의 데이터도 로드할 수 있다. 
 
-# Goal
+## Goal
 1. dask를 이해한다. 
 2. python으로 기본적인 dask 튜토리얼을 진행한다. 
 
-# Dask Explained
+## Dask Explained
 
-## dask란?
+### dask란?
 dask는 python에서 멀티 코어로 병렬 처리를 가능하게 하는 패키지다. dask의 주요 특징은 다음과 같다. 
 * 작업 스케줄링 (dynamic task scheduling)
 * 여러개의 코어를 사용하여 분산 처리
 * 메모리 사이즈보다 큰 용량의 데이터도 처리 가능
 * pandas, numpy와 사용 방법이 유사
 
-### dask cluster
+#### dask cluster
 dask는 dask cluster로 데이터를 병렬 처리한다.   
 cluster란 CPU, 메모리 관리 및 작업을 분배하는 역할을 하는 스케줄러(scheduler)인 `Head`와 실제 작업을 수행하는 여러 `Node`로 구성된다. 각 node들은 데이터 저장 공간(`Storage`)을 공유하고 있다. 
 
 ![](/assets/daskcluster.png)
 파이썬에서 데이터를 처리하는 사용자가 dask로 데이터 처리를 요청하면 (Client), Scheduler가 이 요청을 받아 여러 개의 하위 작업으로 나누어 worker에게 분배한다. Worker는 분할된 작업을 수행하고, 수행하는 과정에서 worker간 커뮤니케이션이 이루어진다.
 
-### dask collections
+#### dask collections
 > dask의 자료구조?
 
 Dask는 `Bag`, `Array`, `Dataframe` collection을 제공하며 이는 각각 파이썬의 list, numpy, pandas와 유사하다. 하지만 dask의 collection은 대용량 데이터를 병렬 처리할 수 있다는 장점이 있다. 
 
-### dask schedulers  
+#### dask schedulers  
 > dask의 처리방식?
 
 Dask는 작업 스케줄링(task scheduler)을 통해 task graph의 작업을 병렬로 처리한다.
@@ -55,7 +55,7 @@ dask가 제공하는 default scheduler로, single mahcine에서 쓰레드(thread
 
 ![](/assets/dask_collection_scheduler.png)
 
-### Spark와 차이점은?
+#### Spark와 차이점은?
 
 Spark 역시 데이터를 병렬로 처리할 수 있는 분산 컴퓨팅 엔진이다. 그렇다면 dask과 spark보다 뛰어난 점은 무엇일까?
 
@@ -69,7 +69,7 @@ Spark 역시 데이터를 병렬로 처리할 수 있는 분산 컴퓨팅 엔진
 
 자세한 설명은 [dask documentation](https://docs.dask.org/en/latest/spark.html#:~:text=welcome%20any%20corrections.-,Summary,to%20achieve%20high%2Dlevel%20functionality.) 을 참고하자. 
 
-# Tutorial: Basic
+## Tutorial: Basic
 
 * Dask 패키지 설치
 
@@ -121,7 +121,7 @@ dask.dataframe은 긴 row를 가진 데이터프레임을 처리하는데 효과
 </div>
 dask.dataframe은 pandas dataframe들이 row-wise하게 연결되어있으며, 실제 데이터프레임을 처리할 때는 row단위로 잘라서 병렬 처리한다. 따라서 pandas로 처리하기 힘든 긴(many rows) 데이터가 있다면, dask를 사용하자. 
 
-# Tutorial: Advanced 
+## Tutorial: Advanced 
 [참고](https://coiled.io/blog/how-to-learn-dask-in-2021/)
 
 
@@ -181,13 +181,13 @@ dask의 연산은 왜 이렇게 느린것인가?
 혹시 내가 dask의 병렬 연산을 제대로 못사용하는 것은 아닐까?
 
 
-# Furthermore...
+## Furthermore...
 > 이어서 공부할 사항이 있다면?
 
 * `kubernetes` with `AWS`
 * `modin`, `vasx`, `koalas` 패키지
 
-# reference
+## reference
 [process&thread best explanation](https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/)
 
 [dask-an-introduction-and-tutorial](https://medium.com/@gongster/dask-an-introduction-and-tutorial-b42f901bcff5)

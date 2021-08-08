@@ -1,12 +1,12 @@
 ---
 layout: article
-title: Linux-Bash 스크립트에서 자기 자신의 파일명 찾기
+title: LINUX - Bash 스크립트에서 자기 자신의 파일명 찾기
 aside:
  toc: true
 tags: linux
 ---
 
-# Problem
+## Problem
 bash 스크립트 내에서 스크립트가 저장된 위치(절대 경로)를 찾고 싶다.  
 
 # Take Away  
@@ -24,9 +24,9 @@ cd $(dirname -- "${BASH_SOURCE[0]}") && pwd
 `$0`와 `$BASH_SOURCE`변수는 스크립트 파일의 이름, 즉 **파일명**을 값으로 갖는다.    
 하지만 두 변수가 항상 동일한 값을 갖는 것은 아니다. 자세한 내용은 아래를 참고하자. 
 
-# Contents
+## Contents
 
-## method 1: "$0" 명령어 사용
+### method 1: "$0" 명령어 사용
 ```sh
 cur_dir=$(cd $(dirname -- "$0") && pwd) # 스크립트의 절대 경로를 cur_dir 변수에 저장
 echo $cur_dir
@@ -39,7 +39,7 @@ echo $cur_dir
 ##### [참고] `source FILENAME.sh` 과 `bash FILENAME.sh`의 차이점 [ClickMe:)]({% post_url 2021-02-24-linux-shell-source-command %})
 
 
-## method 2: "$BASH_SOURCE" 명령어 사용
+### method 2: "$BASH_SOURCE" 명령어 사용
 ```sh
 cur_dir=$(cd $(dirname $BASH_SOURCE) && pwd)
 echo $cur_dir
@@ -69,6 +69,6 @@ $BASH_SOURCE[0] = './b.sh'
 ```
 `source`명령어를 사용해 b.sh을 실행하면 `$0` 변수가 더 이상 b.sh 스크립트를 출력하지 않는다. 대신 `$0` 변수의 값은 b.sh을 실행하는 스크립트인 a.sh의 파일명을 갖는다. 결론적으로, 스크립트 변수명을 알고 싶을 땐, 가변적인 변수인 `$0` 보다 값이 변하지 않는 `BASH_SOURCE` 변수를 사용하는 것이 안전하다. 
 
-# Reference
+## Reference
 [choosing-between-0-and-bash-source](https://stackoverflow.com/questions/35006457/choosing-between-0-and-bash-source)
 
