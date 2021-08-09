@@ -155,15 +155,15 @@ sound/                          //Top-level package
 
 sound라는 (상위) 패키지와 format, effects, filters 등의 하위 패키지가 상,하위 계층을 갖는다. 그래서 특정 하위 패키지의 모듈을 찾아서 부르기가 편해졌다!    
 
-에코 모듈을 import하고 싶으면  `import sound.effects.echo` 처럼 `.` 으로 계층을 타고 가면 된다.    
+에코 모듈을 import하고 싶으면  `import sound.effects.echo` 처럼 `.` 으로 계층을 타고 가면 된다.   
 
 * Package 더 알아보기 
   *  `__init__.py`
     * 파일과 디렉토리들이 package가 되려면 가장 상위 디렉토리에 init 파일이 필요하다. 파일 내용은 없어도 된다. (python3.3 버전 부터는 해당 파일이 없어도 패키지로 인식한다. 하지만 하위 버전 파이썬과 호환을 위해서는 파일을 만들어주자!)
   * absolute VS relative import 
-    * [관련 포스트로 이동!](/posts/2021-03-17-path.md)
+    * [관련 포스트로 이동!](https://christinarok.github.io/2021/03/17/path.html)
 
-### 결론 
+### 4. 결론 
 
 인간의 욕심은 좋은 것이다 😄
 
