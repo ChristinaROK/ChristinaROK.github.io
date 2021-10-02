@@ -37,7 +37,7 @@ author:
   name      : Christina
   url       :
   avatar    : /assets/me.jpg # path or url of avatar image (square)
-  bio       : Hi there! Share something you've got with me!
+  bio       : Data Engineer / Interested in Edu-tech / Posting related to tech & startups 👩‍💻
   email     : myway2027@gmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -210,7 +210,7 @@ defaults:
       license: true
       aside:
         toc: true
-      show_edit_on_github: true
+      show_edit_on_github: false
       show_subscribe: true
       pageview: true
 
