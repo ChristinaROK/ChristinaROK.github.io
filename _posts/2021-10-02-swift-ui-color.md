@@ -8,7 +8,7 @@ article_header:
   type: cover
   theme: dark
   image:
-    src: /assets/swift.jpeg
+    src: /assets/swift/swift.jpeg
 show_author_profile: true
 comment: true
 tags: swift
@@ -16,11 +16,21 @@ tags: swift
 
 스위프트에서 사용자 지정 색상을 등록하고 사용하는 방법을 알아보자. 
 
-나나
+1. 새로운 파일 생성
 
-나나
+단축키 ⌘+⇧+N 를 눌러 새로운 "Assets Catalog"를 파일을 생성한다.    
 
-나나
+![](/assets/swift/1/1.png)
+
+
+
+파일명에 "Color"를 입력한다. 그러면 Color.xcassets 파일이 생성된다.    
+
+Color Set을 추가해보자. 나는 올리브 색상을 추가하려고 한다. 색상명에 "olive"를 입력하고 색상 코드를 입력하자.    
+
+색상 코드는 "RGB" 또는 "HEX" 코드 모두 입력 가능하다.    
+
+
 
 
 
