@@ -41,7 +41,7 @@ Topic Segmentation에는 크게 2가지 방법론이 있습니다.
 - Multi-task learning
 
 ## Two-level transformer
-1. token-level transformer
+- token-level transformer
 <figure>
   <img src="/assets/cats/token-transformer.png" width="300" height="500">
   <figcaption>Source: Figure 2: High-level depiction of the Coherence-Aware Text Segmentation (CATS) model.</figcaption>
@@ -63,7 +63,7 @@ Topic Segmentation에는 크게 2가지 방법론이 있습니다.
 
 문장 encoding 기호: $S_i$ = $tt_0^i$   
 
-2. sentence-level transformer
+- sentence-level transformer
 <figure>
   <img src="/assets/cats/sentence-transformer.png" width="300" height="500">
   <figcaption>Source: Figure 2: High-level depiction of the Coherence-Aware Text Segmentation (CATS) model.</figcaption>
@@ -76,7 +76,7 @@ Topic Segmentation에는 크게 2가지 방법론이 있습니다.
 이렇게 생성된 문장 embedding은 $\{ss_i\}_0^K$로 표현됩니다. 문장은 `K`개 밖에 없는데 왜 문장 embedding은 `K+1`개 생성될까요? 이번 역시 문장 맨 앞에 `<sss>`라는 토큰을 추가해 문장 전체를 아우르는 문서 embedding을 얻습니다. $ss_0$ 문장 embedding이 바로 문서의 embedding이라고 할 수 있습니다. 
 
 ## Multi-task learning
-1. segmentation classifier
+- segmentation classifier
 
 <img src="/assets/cats/formula3.png" width="250" height="40">
 
@@ -86,7 +86,7 @@ Topic Segmentation에는 크게 2가지 방법론이 있습니다.
 
 segmentation classifier의 목적 함수는 negative log-likelihood입니다. 여기서 `N`이란 한 배치(batch)에 존재하는 문서의 개수를 의미합니다. `K`개의 문장으로 구성된 `N`개의 문서의 negative log-likelihood의 값을 합해 한 배치의 loss를 계산합니다. 
 
-2. coherence regressor
+- coherence regressor
 
 Transformer 모델에서 `K+1`의 문장 embedding을 생성했습니다. 그 중 `K`개의 문장 embedding은 앞서 본 segment classifier에 입력되고 남은 $ss_0$ 문서 embedding은 coherence regressor에 입력되 문서 내 문장들의 응집 정도를 예측합니다.   
 한 문서 내 문장들이 서로 비슷한 이야기를 한다면 응집도는 높을 것 입니다. 하지만 문장들 하나가 문맥에 벗어난 이야기를 한다면 문서의 응집도는 낮아질 것입니다. coherence regressor의 목적은 응집도가 높은 문서와 낮은 문서를 비교하며 상대적으로 높은 응집성을 가진 문서에 높은 응집성 점수를, 상대적으로 낮은 응집성을 가진 문서에는 낮은 응집성 점수를 주도록 모델을 학습합니다. 따라서 모델이 문서를 보고 응집도 점수를 예측할 수 있도록 말이죠.    
