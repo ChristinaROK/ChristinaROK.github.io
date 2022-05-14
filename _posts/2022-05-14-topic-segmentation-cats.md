@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Supervised Topic Segmentation - Coherence-aware Text Segmentation (CATS) AAAI 2020
-mode: background
+mode: overlay
 header: 
   theme: dark
 article_header:
