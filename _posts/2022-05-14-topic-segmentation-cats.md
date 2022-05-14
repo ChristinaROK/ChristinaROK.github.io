@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Supervised Topic Segmentation - Coherence-aware Text Segmentation (CATS) AAAI 2020
-mode: immersive
+mode: background
 header: 
   theme: dark
 article_header:
@@ -11,6 +11,8 @@ article_header:
     src: /assets/cats/header.jpg
 show_author_profile: false
 comment: true
+mathjax: true
+mathjax_autoNumber: true
 tags: nlp
 ---
 
@@ -121,7 +123,7 @@ coherence regressor의 목적 함수는 contrastive margin loss로 $coh(S)$와 $
 또한 multi-task learning 기법(CATS)이 단일 segmentation classfication (TLT-TS)모델보다 우수한 성능을 내는 것을 알 수 있습니다. 
 
 # Implementation
-논문의 코드는 github에 공개되어 있다. 하지만 다음과 같은 (지극히 개인적인) 한계점이 있다. 
+논문의 코드는 github에 공개되어 있지만 다음과 같은 (지극히 개인적인) 한계점이 있습니다. 
 1. tensorflow로 구현됨
 2. tensorflow 이전 버전으로 구현되어 현재 GPU와 cuda version이 맞지 않음
 
