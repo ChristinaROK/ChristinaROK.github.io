@@ -25,17 +25,17 @@ titles:
   # @end locale config
 key: page-about
 ---
-<div style="width:80%; margin:0 auto;" align="center" markdown="1">
+<div style="width:70%; margin:0 auto;" align="center" markdown="1">
   ![Me](/assets/myphoto/intro.jpeg){:.rounded.shadow}
 </div>
 
-Hello I'm Christina. I am NLP researcher/engineer who previously majored in English Translation.   
+Hi I'm Jin. I am NLP researcher/engineer who previously majored in English Translation.   
 
 Until highschool, I was enthusiastic about learning new languages. I learned English and Chinese as my 2nd and 3rd language at Suwon Academy of World Languages (SAWL).   
 
 I kept following my interest in learning new lauguages that I went to Hankuk University of Foreign Studies (HUFS). But there, I fell in love with programming! I participated and won serveral data analysis competitions using Python.    
 
-I am currently interested in EdTech industry where I can integrate my passion for learning new languages and programming. I will keep posting information about EdTech industry as well as techical tips here in this blog.    
+I am currently interested in EdTech industry where I can integrate my passion for learning new languages and programming. I will keep posting information about EdTech industry as well as technical tips here in this blog.    
 
 If you have similar interest with me (or just want to say hello to me 🤣) please leave comment or email me!   
 
@@ -49,13 +49,11 @@ Thank you, enjoy your staying at my blog!
 
 그런데 대학교에 입학하면서 프로그래밍의 재미에 빠지게됐습니다. 특히 데이터 분석에 특화된 Python을 좋아했어요. 각종 데이터분석 대회에 참여하면서 수상도 했습니다.    
 
-현재 저는 **누구나 쉽고 재밌게 새로운 언어를 배울 수 있는 서비스** 를 만드는 일에 열정이 있습니다. 따라서 EdTech 산업에 관심이 많아요. 혹시 저와 관심사가 비슷하시다면 댓글이나 메일로 연락주세요! 가치있는 일을 시작해봐요!!!    
+현재 저는 **누구나 쉽고 재밌게 새로운 언어를 배울 수 있는 서비스** 를 만드는 일에 열정이 있습니다. 따라서 EduTech 산업에 관심이 많아요. 혹시 저와 관심사가 비슷하시다면 댓글이나 메일로 연락주세요! 가치있는 일을 시작해봐요!!!    
 
 읽어 주셔서 감사합니다. 제 블로그에서 즐거운 시간 보내세요!
 
 ---
-
-* 📕 [Portfolio](https://myway2027.notion.site/Portfolio-6ee9d1c10a8d47e68324c05ff3a447ff) 
 
 * ✉️ myway2027@gmail.com
 
