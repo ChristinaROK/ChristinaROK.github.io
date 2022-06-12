@@ -3,7 +3,7 @@
 *.diff
 *.patch
 *.bak
-.DS_Store
+*.DS_Store
 *.swp
 *.swo
 *.log
