@@ -77,7 +77,7 @@ EC2 Auto Scaling Group은 별도의 사용료가 없습니다. EC2, EBS(Storage)
 - Ip-hash
   - 요청을 hash 함수를 이용해 hash 값으로 변환한 후 hash 값과 맵핑된 인스턴스에 할당합니다. 
 
-EBS는 Auto Scaling Group(인스턴스읜 논리적 그룹)별로 설정이 가능합니다.      
+EBS는 Auto Scaling Group(인스턴스의 논리적 그룹)별로 설정이 가능합니다.      
 
 마지막으로 EBS의 로드 밸런서 타입을 알아보겠습니다.   
 - 어플리케이션 로드 밸런서 (L7)
