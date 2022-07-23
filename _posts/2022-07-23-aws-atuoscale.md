@@ -8,7 +8,7 @@ article_header:
   type: cover
   theme: dark
   image:
-    src: /assets/aws/ec2.png
+    src: /assets/aws/autoscale/aws_autoscale.jpg
 show_author_profile: false
 comment: true
 mathjax: true
