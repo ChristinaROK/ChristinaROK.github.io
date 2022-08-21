@@ -51,7 +51,7 @@ Bias와 Variance의 개념을 들어본 사람이라면 robust한 모델은 vari
 하지만 연속형 데이터 (continuous data)인 learning rate를 튜닝하는 경우는 균등 분포를 사용하면 안된다. Learning rate의 최솟값이 0.0001, 최댓값이 1이라고 할 때 균등 분포로 추출하면 (0.1,1] 사이의 값이 나올 확률이 90%가 된다. 반대로 (0,0.1] 10%밖에 되지 않는다. 이럴 경우는 **로그 스케일**을 적용해 랜덤 추출해야 한다. 
 
 <figure>
-  <img src="/assets/deeplearning/scale.png" width="500" height="200">
+  <img src="/assets/deeplearning/scale.png" width="500" height="400">
 </figure>
 
 위 그림처럼 learning rate ($\alpha$)의 분포에 로그 스케일을 적용한 후 랜덤 샘플을 한다. `np.random.rand`는 [0,1) 값을 균등 분포에서 추출한다. 따라서 -4를 곱해 우리가 원하는 범위를 만들고 learning rate를 복원하기 위해 10제곱을 양변에 곱하면 learning rate 값을 얻을 수 있다.    
@@ -73,13 +73,13 @@ Batch normalization의 부가적인 장점으로는 regularization 효과를 들
 ## Implement Batch Normalizaiton
 
 <figure>
-  <img src="/assets/deeplearning/batchnorm.png" width="900" height="200">
+  <img src="/assets/deeplearning/batchnorm.png" width="600" height="400">
 </figure>
 
 위 사진은 3개의 hidden layer를 가진 뉴럴넷이다. l번째 hidden layer의 결과값을 $z^{[l]}$이라고 하자. Batch normalization은 $z^{[l]}$ 대신 정규화된 값 $\tilde{z^{[l]}}$을 사용한다. 
 
 <figure>
-  <img src="/assets/deeplearning/calculation.png" width="500" height="300">
+  <img src="/assets/deeplearning/calculation.png" width="500" height="500">
 </figure>
 
 위 사진은 정규화 과정을 자세히 보여준다. 배치 사이즈를 m이라고 가정했을 때 미니 배치의 $z^{[l]}$ (위 사진에서는 $x_i$ 기호로 표시했지만 그 의미는 이전 레이어의 아웃풋에 weight와 bias를 곱하고 더한 값인 $z^{[l]}$를 의미한다.)의 평균과 분산을 구한다. 구한 평균과 분산으로 정규화된 값 ($\tilde{z^{[l]}}$)을 구하는데 이 때 분모가 0이 되는 것을 방지하기 위해 (numerical stability) 분모에 $\epsilon$을 더한다.    
